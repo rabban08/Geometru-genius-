@@ -36,7 +36,9 @@
                             <h2 class=" text-xl ">Triangle</h2>
                             <p>Area: 0.5 X b X h</p>
                         </div>
-
+                        <div>
+                            Area: <span id="triangleAreaResult">0</span> <span>cm<sup>2</sup></span>
+                        </div>
 
                         <div class="text-center my-5">
                             <input id="triangleBase" class="w-16 text-xl p-2  rounded-md" type="text" placeholder="b">
@@ -44,9 +46,7 @@
                             <input id="triangleHeight" class="w-16 text-xl p-2  rounded-md" type="text" placeholder="h">
                             <span>cm</span>
                         </div>
-                        <div>
-                            Area: <span id="triangleAreaResult">0</span> <span>cm<sup>2</sup></span>
-                        </div>
+
                         <button onclick="triangleCalculate()" class="btn btn-primary w-full">Calculate</button>
 
                     </div>
@@ -87,18 +87,22 @@
                     <div class="card-body">
                         <div class="font-semibold text-center">
                             <h2 class=" text-xl ">Parallelogram</h2>
-                            <p>Area: 0.5 X b X h</p>
+                            <p>Area: b X h</p>
+                        </div>
+
+                        <div>
+                            Area: <span id="paralleAreaResult">0</span> <span>cm<sup>2</sup></span>
                         </div>
 
 
                         <div class="text-center my-5">
-                            <input class="w-16 text-xl p-2  rounded-md" type="text" placeholder="b">
+                            <input id="paralleBase" class="w-16 text-xl p-2  rounded-md" type="text" placeholder="b">
                             <span>cm</span>
-                            <input class="w-16 text-xl p-2  rounded-md" type="text" name="" id="" placeholder="h">
+                            <input id="paralleHeight" class="w-16 text-xl p-2  rounded-md" type="text" placeholder="h">
                             <span>cm</span>
                         </div>
 
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="parallelogramCalculator()" class="btn btn-primary w-full">Calculate</button>
 
                     </div>
                 </div>
@@ -111,18 +115,23 @@
                     <div class="card-body">
                         <div class="font-semibold text-center">
                             <h2 class=" text-xl ">Rhombus</h2>
-                            <p>Area: 0.5 X b X h</p>
+                            <p>Area: 0.5 X <span>d <sub>1</sub></span> X <span>d</span><sub>2</sub></p>
                         </div>
-
+                        <div>
+                            Area: <span id="rhombusAreaResult">0</span> <span>cm<sup>2</sup></span>
+                        </div>
 
                         <div class="text-center my-5">
-                            <input class="w-16 text-xl p-2  rounded-md" type="text" placeholder="b">
+                            <!-- d1= base Diagonal -->
+                            <input id="baseDiagonal" class="w-16 text-xl p-2  rounded-md" type="text" placeholder="d1">
                             <span>cm</span>
-                            <input class="w-16 text-xl p-2  rounded-md" type="text" name="" id="" placeholder="h">
+                            <!-- d2= height Diagonal -->
+                            <input id="heightDiagonal" class="w-16 text-xl p-2  rounded-md" type="text" name=""
+                                placeholder="d2">
                             <span>cm</span>
                         </div>
 
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="rhombusCalculator()" class="btn btn-primary w-full">Calculate</button>
 
                     </div>
                 </div>
@@ -183,7 +192,7 @@
 
             <!-- area container -->
             <div class=" border border-gray-100 rounded-md px-3 ">
-                <h3 class="text-3xl text-center">Area calculation</h3>
+                <h3 class="text-3xl text-center underline">Area calculation</h3>
             </div>
 
 
