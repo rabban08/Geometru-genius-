@@ -147,15 +147,20 @@
                             <p>Area: 0.5 X b X h</p>
                         </div>
 
+                        <div>
+                            Area: <span id="pantagonAreaResult">0</span> <span>cm<sup>2</sup></span>
+                        </div>
 
                         <div class="text-center my-5">
-                            <input class="w-16 text-xl p-2  rounded-md" type="text" placeholder="b">
+                            <input id="pantagonPerimeter" class="w-16 text-xl p-2  rounded-md" type="text"
+                                placeholder="peri">
                             <span>cm</span>
-                            <input class="w-16 text-xl p-2  rounded-md" type="text" name="" id="" placeholder="h">
+                            <input id="pantagonApothem" class="w-16 text-xl p-2  rounded-md" type="text"
+                                placeholder="apo">
                             <span>cm</span>
                         </div>
 
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculatePantagonArea()" class="btn btn-primary w-full">Calculate</button>
 
                     </div>
                 </div>
@@ -168,18 +173,23 @@
                     <div class="card-body">
                         <div class="font-semibold text-center">
                             <h2 class=" text-xl ">Ellipse</h2>
-                            <p>Area: 0.5 X b X h</p>
+                            <p>Area: 3.1416 X b X h</p>
                         </div>
 
+                        <div>
+                            Area: <span id="ellipseAreaResult">0</span> <span>cm<sup>2</sup></span>
+                        </div>
 
                         <div class="text-center my-5">
-                            <input class="w-16 text-xl p-2  rounded-md" type="text" placeholder="b">
+                            <input id="ellipseMajos-radious" class="w-16 text-xl p-2  rounded-md" type="text"
+                                placeholder="r1">
                             <span>cm</span>
-                            <input class="w-16 text-xl p-2  rounded-md" type="text" name="" id="" placeholder="h">
+                            <input id="ellipseMinar-radious" class="w-16 text-xl p-2  rounded-md" type="text"
+                                placeholder="r2">
                             <span>cm</span>
                         </div>
 
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
 
                     </div>
                 </div>
@@ -208,6 +218,7 @@
 
     </footer>
     <script src="JS/calculate.js"></script>
+    <script src="JS/pantagon.js"></script>
 </body>
 
 </html>
